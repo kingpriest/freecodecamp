@@ -1,15 +1,13 @@
 <template>
   <div class="container d-flex flex-row justify-content-center">
-    <div class="left w-25 p-2">
+    <div style="height:1300px" class="left w-25 p-2">
       <img width="100%" src="static/img/timg.gif" alt="logo">
       <div class="title">
         <h4>FCC Tianjin</h4>
       </div>
     </div>
-    <div ref="right" class="right w-70 p-2">
-      <div class="cont">
-        <hr>
-        <div class="col-xl-12 text-center">
+    <div class="right w-70 p-2">
+        <div ref="right" class="cont col-xl-12">
           <b-card v-for="(item, index) in achievementData" :key="index"
                   :title="item.title"
                   :img-src="item.img"
@@ -26,7 +24,6 @@
             </ul>
           </b-card>
         </div>
-      </div>
     </div>
   </div>
 </template>
@@ -61,8 +58,11 @@ export default {
     }
   },
   mounted() {
-    this.right = this.$refs.right.offsetHeight
-    console.log(this.right)
+    this.$nextTick(() => {
+      this.right = this.$refs.right.clientHeight
+      console.log(this.right)
+    })
+
   }
 }
 </script>
@@ -97,55 +97,59 @@ export default {
     width: 300px;
 
 .right
-  .card
-    width: 400px;
-    display: inline-block;
-    margin-left: 15px;
-    margin-top: 20px;
-    overflow: hidden;
+  .cont
+    text-align: center;
 
-    .list
-      list-style: none;
-      width: 80%;
-      margin: 15px auto;
+    .card
+      width: 450px;
+      display: inline-block;
+      margin-left: 15px;
+      margin-top: 20px;
+      overflow: hidden;
+      text-align: left;
 
-      li
-        margin-top: 8px;
-        width: 100%;
-        position: relative;
-        display: block;
+      .list
+        list-style: none;
+        width: 80%;
+        margin: 15px auto;
 
-        div
-          display: inline-block;
-
-        .circle
-          position: absolute;
-          width: 8px;
-          height: 8px;
-          left: -20px;
-          top: 8px;
-          border-radius: 100%;
-          background: white;
-          z-index: 1;
-          border: 1px solid blue;
-
-        .line
-          position: absolute;
-          width: 1px;
-          height: 200px;
-          left: -17px;
-          border: 1px solid blue;
-
-        .text
+        li
+          margin-top: 8px;
           width: 100%;
-          font-size: 1rem;
+          position: relative;
+          display: block;
 
-      :last-child
-        .line
-          position: absolute;
-          width: 1px;
-          height: 30px;
-          left: -17px;
-          border: 1px solid blue;
+          div
+            display: inline-block;
+
+          .circle
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            left: -20px;
+            top: 8px;
+            border-radius: 100%;
+            background: white;
+            z-index: 1;
+            border: 1px solid blue;
+
+          .line
+            position: absolute;
+            width: 1px;
+            height: 200px;
+            left: -17px;
+            border: 1px solid blue;
+
+          .text
+            width: 100%;
+            font-size: 1rem;
+
+        :last-child
+          .line
+            position: absolute;
+            width: 1px;
+            height: 30px;
+            left: -17px;
+            border: 1px solid blue;
 </style>
 

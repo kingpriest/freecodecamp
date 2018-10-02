@@ -1,13 +1,13 @@
 <template>
   <div class="container d-flex flex-row justify-content-center">
-    <div class="left w-25 p-2">
+    <div :style="{height:right+10+'px'}" class="left w-25 p-2">
       <img width="100%" src="static/img/timg.gif" alt="logo">
       <div class="title">
         <h4>FCC Tianjin</h4>
       </div>
     </div>
     <div class="right w-75 p-2">
-      <div class="rightContainer">
+      <div ref="right" class="rightContainer">
         <div class="con-title">
           Contributors
         </div>
@@ -79,7 +79,8 @@ export default {
           avatar: 'https://avatars3.githubusercontent.com/u/18321545?s=460&v=4',
           tags: ['全栈', 'js', 'php', 'java']
         }
-      ]
+      ],
+      right: 0
     }
   },
   methods: {
@@ -89,6 +90,10 @@ export default {
     onSlideEnd(slide) {
       this.sliding = false
     }
+  },
+  mounted() {
+    this.right = this.$refs.right.clientHeight
+    console.log(this.right)
   }
 }
 </script>
@@ -165,13 +170,13 @@ export default {
 <style lang="stylus" scoped rel="stylesheet/stylus">
 .rightContainer
   .con-title
-    margin: 20px 0;
+    padding: 20px 0;
 
   .text
-    margin: 10px 0;
+    padding: 10px 0;
 
   .text-center
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 
     .content-box
       position: relative;
