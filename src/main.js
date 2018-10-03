@@ -7,7 +7,8 @@ import BootstrapVue from 'bootstrap-vue'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-
+import data from './datajson.js'
+Vue.prototype.$datajson = data
 Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false

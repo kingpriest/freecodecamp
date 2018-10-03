@@ -32,32 +32,12 @@
 export default {
   data() {
     return {
-      achievementData: [
-        {
-          img: 'static/img/fcc-meetup1.jpeg',
-          title: '2017/04 FCC上海前端技术群线下Meetup #1',
-          list: ['开场；', '1、造轮子-简单的 MVVM 框架核心 - 于航；', '2、SSO 核心原理 - Kenneth Choi；', '3、RESTful API 架构设计 - 🐔；', '4、Bigpipe 技术的前端应用 - 糖爸；', '自由交流；']
-        },
-        {
-          img: 'static/img/fcc-meetup2.jpeg',
-          title: '2017/04 FCC上海前端技术群线下Meetup #1',
-          list: ['开场；', '1、造轮子-简单的 MVVM 框架核心 - 于航；', '2、SSO 核心原理 - Kenneth Choi；', '3、RESTful API 架构设计 - 🐔；', '4、Bigpipe 技术的前端应用 - 糖爸；', '自由交流；']
-        },
-        {
-          img: 'static/img/fcc-meetup3.jpeg',
-          title: '2017/04 FCC上海前端技术群线下Meetup #1',
-          list: ['开场；', '1、造轮子-简单的 MVVM 框架核心 - 于航；', '2、SSO 核心原理 - Kenneth Choi；', '3、RESTful API 架构设计 - 🐔；', '4、Bigpipe 技术的前端应用 - 糖爸；', '自由交流；']
-        },
-        {
-          img: 'static/img/fcc-meetup4.jpg',
-          title: '2017/04 FCC上海前端技术群线下Meetup #1',
-          list: ['开场；', '1、造轮子-简单的 MVVM 框架核心 - 于航；', '2、SSO 核心原理 - Kenneth Choi；', '3、RESTful API 架构设计 - 🐔；', '4、Bigpipe 技术的前端应用 - 糖爸；', '自由交流；']
-        }
-      ],
+      achievementData: [],
       right: 0
     }
   },
   mounted() {
+    this.achievementData = this.$datajson.achievementData
     this.$nextTick(() => {
       this.right = this.$refs.right.clientHeight
       console.log(this.right)

@@ -48,38 +48,7 @@ export default {
     return {
       slide: 0,
       sliding: null,
-      contributors: [
-        {
-          name: 'Topqiang',
-          avatar: 'https://avatars3.githubusercontent.com/u/18321545?s=460&v=4',
-          tags: ['全栈', 'js', 'php', 'java']
-        },
-        {
-          name: 'Topqiang',
-          avatar: 'https://avatars3.githubusercontent.com/u/18321545?s=460&v=4',
-          tags: ['全栈', 'js', 'php', 'java']
-        },
-        {
-          name: 'Topqiang',
-          avatar: 'https://avatars3.githubusercontent.com/u/18321545?s=460&v=4',
-          tags: ['全栈', 'js', 'php', 'java']
-        },
-        {
-          name: 'Topqiang',
-          avatar: 'https://avatars3.githubusercontent.com/u/18321545?s=460&v=4',
-          tags: ['全栈', 'js', 'php', 'java']
-        },
-        {
-          name: 'Topqiang',
-          avatar: 'https://avatars3.githubusercontent.com/u/18321545?s=460&v=4',
-          tags: ['全栈', 'js', 'php', 'java']
-        },
-        {
-          name: 'Topqiang',
-          avatar: 'https://avatars3.githubusercontent.com/u/18321545?s=460&v=4',
-          tags: ['全栈', 'js', 'php', 'java']
-        }
-      ],
+      contributors: [],
       right: 0
     }
   },
@@ -92,6 +61,7 @@ export default {
     }
   },
   mounted() {
+    this.contributors = this.$datajson.contributors
     this.right = this.$refs.right.clientHeight
     console.log(this.right)
   }

@@ -43,6 +43,9 @@
 <script>
 export default {
   name: 'App',
+  mounted(){
+    console.log("data",this.$datajson);
+  },
   methods: {
     toAboutUs() {
       this.$router.push('/aboutUs')
