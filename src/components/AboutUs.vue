@@ -25,7 +25,7 @@
             @sliding-end="onSlideEnd">
 
             <!-- Text slides with image -->
-            <b-carousel-slide v-for="img in carousel"
+            <b-carousel-slide v-for="(img, index) in carousel" :key="index"
               :img-src="img.imgsrc" :img-alt="img.alt" :caption="img.title">
               <p>{{img.desc}}</p>
             </b-carousel-slide>

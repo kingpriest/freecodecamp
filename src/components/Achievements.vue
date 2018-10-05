@@ -40,7 +40,6 @@ export default {
     this.achievementData = this.$datajson.achievementData
     this.$nextTick(() => {
       this.right = this.$refs.right.clientHeight
-      console.log(this.right)
     })
 
   }

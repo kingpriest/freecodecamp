@@ -44,7 +44,7 @@
 export default {
   name: 'App',
   mounted(){
-    console.log("data",this.$datajson);
+    // console.log("data",this.$datajson);
   },
   methods: {
     toAboutUs() {

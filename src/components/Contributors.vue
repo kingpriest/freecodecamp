@@ -1,13 +1,13 @@
 <template>
   <div class="container d-flex flex-row justify-content-center">
-    <div :style="{height:right+10+'px'}" class="left w-25 p-2">
+    <div style="height:1200px" class="left w-25 p-2">
       <img width="100%" src="static/img/timg.gif" alt="logo">
       <div class="title">
         <h4>FCC Tianjin</h4>
       </div>
     </div>
     <div class="right w-75 p-2">
-      <div ref="right" class="rightContainer">
+      <div ref="rightContainer" class="rightContainer">
         <div class="con-title">
           Contributors
         </div>
@@ -43,27 +43,18 @@
 </template>
 <script>
 export default {
-  name: 'HelloWorld',
   data() {
     return {
-      slide: 0,
-      sliding: null,
       contributors: [],
       right: 0
     }
   },
-  methods: {
-    onSlideStart(slide) {
-      this.sliding = true
-    },
-    onSlideEnd(slide) {
-      this.sliding = false
-    }
-  },
   mounted() {
     this.contributors = this.$datajson.contributors
-    this.right = this.$refs.right.clientHeight
-    console.log(this.right)
+    console.log(this.$refs.rightContainer)
+    console.log(this.$refs.rightContainer.clientWidth)
+    console.log(this.$refs.rightContainer.clientHeight)
+    this.right = this.$refs.rightContainer.clientHeight
   }
 }
 </script>
@@ -122,18 +113,6 @@ export default {
 .content-box:hover {
   transition: all 0.5s linear;
   animation: animate 0.5s linear infinite;
-  background-size: 100px 100px;
-  background-image: linear-gradient(
-    135deg,
-    rgb(46, 148, 63),
-    rgb(46, 148, 63) 25%,
-    white 25%,
-    white 50%,
-    rgb(46, 148, 63) 50%,
-    rgb(46, 148, 63) 75%,
-    white 75%,
-    white 100%
-  );
 }
 </style>
 
