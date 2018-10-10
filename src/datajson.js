@@ -39,6 +39,16 @@ export default {
             "avatar"	: 'http://www.simengphp.com',
             "tags"		: ['php']
         },
+        {
+            "name"		: '伊莉娜',
+            "avatar"	: '#',
+            "tags"		: ['运营', '自媒体']
+        },
+        {
+            "name"		: '张烁',
+            "avatar"	: '#',
+            "tags"		: ['CTO']
+        },
       ],
     /**fcc项目介绍*/
 	"aboutus"	:[
@@ -55,7 +65,7 @@ export default {
 		{
 			"title"		:"FreeCodeCamp conf",
 			"imgsrc"	:"https://picsum.photos/1024/480/?image=58",
-			"alt"			:"",
+			"alt"		:"",
 			"href"		:"https://www.freecodecamp.one",
 			"desc"		:"FreeCodeCamp本期简单描述"
 		},
