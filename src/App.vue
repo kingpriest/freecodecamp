@@ -55,6 +55,11 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+.container {
+  border-left: 1px solid rgb(243, 237, 237);
+  border-right: 1px solid rgb(243, 237, 237);
+  border-bottom: 1px solid rgb(243, 237, 237);
+}
 .left {
   padding: 0 10px;
   /* background-color: rgb(251, 244, 244);
