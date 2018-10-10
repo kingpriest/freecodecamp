@@ -36,7 +36,7 @@ export default {
         },
         {
             "name"		: '刘柱',
-            "avatar"	: 'https://github.com/simengphp',
+            "avatar"	: 'http://www.simengphp.com',
             "tags"		: ['php']
         },
       ],
