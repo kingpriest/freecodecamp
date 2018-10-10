@@ -1,5 +1,5 @@
 <template>
-  <div class="container d-flex flex-row justify-content-center">
+  <!-- <div class="container d-flex flex-row justify-content-center">
     <div style="height:1200px" class="left w-25 p-2">
       <img width="100%" src="static/img/timg.gif" alt="logo">
       <div class="title">
@@ -38,6 +38,37 @@
           成为一位项目贡献者非常简单, 这里有一个<a href="#">链接</a>, 相信你能在里面找到你想要的答案。
         </div>
       </div>
+    </div>
+  </div> -->
+  <div ref="rightContainer" class="rightContainer">
+    <div class="con-title">
+      Contributors
+    </div>
+    <hr>
+    <div class="col-xl-12 text-center">
+      <div class="content-box" v-for="(item, index) in contributors" :key="index">
+        <div class="card-body">
+          <div class="avatar">
+            <img :src="item.avatar" width="100" height="100" alt="avatar" >
+          </div>
+          <div class="name">
+            {{item.name}}
+          </div>
+          <b-button variant="outline-success" v-for="(val, index) in item.tags" :key="index" style="margin-top:10px;margin-left:6px;width:50px;">
+            {{val}}
+          </b-button>
+        </div>
+      </div>
+    </div>
+    <div class="con-title">
+      如何成为一位贡献者
+    </div>
+    <hr>
+    <div class="text">
+      FCC天津社区绝不将社区志愿者的贡献做量化, 上述排列仅为参与先后顺序
+    </div>
+    <div class="text">
+      成为一位项目贡献者非常简单, 这里有一个<a href="#">链接</a>, 相信你能在里面找到你想要的答案。
     </div>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container d-flex flex-row justify-content-center">
+  <!-- <div class="container d-flex flex-row justify-content-center">
     <div style="height:1300px" class="left w-25 p-2">
       <img width="100%" src="static/img/timg.gif" alt="logo">
       <div class="title">
@@ -24,6 +24,25 @@
             </ul>
           </b-card>
         </div>
+    </div>
+  </div> -->
+  <div>
+    <div ref="right" class="cont col-xl-12">
+      <b-card v-for="(item, index) in achievementData" :key="index"
+              :title="item.title"
+              :img-src="item.img"
+              img-alt="Image"
+              img-top
+              class="card"
+              id="card">
+        <ul class="list">
+          <li v-for="(val, index) in item.list" :key="index">
+            <div class="circle"></div>
+            <div class="line"></div>
+            <div class="text">{{val}}</div>
+          </li>
+        </ul>
+      </b-card>
     </div>
   </div>
 </template>
