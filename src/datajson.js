@@ -1,4 +1,5 @@
 export default {
+    /**历史活动记录*/
 	"achievementData":[
         {
           "img"		: 'static/img/fcc-meetup1.jpeg',
@@ -21,38 +22,25 @@ export default {
           "list"	: ['开场；', '1、造轮子-简单的 MVVM 框架核心 - 于航；', '2、SSO 核心原理 - Kenneth Choi；', '3、RESTful API 架构设计 - 🐔；', '4、Bigpipe 技术的前端应用 - 糖爸；', '自由交流；']
         }
       ],
+    /**组织者*/
 	"contributors":[
         {
-          "name"		: 'Topqiang',
-          "avatar"	: 'https://avatars3.githubusercontent.com/u/18321545?s=460&v=4',
-          "tags"		: ['全栈', 'js', 'php', 'java']
+          "name"		: '阚自强',
+          "avatar"	: 'https://github.com/topqiang',
+          "tags"		: ['全栈', 'js', 'php', 'java','vue','react']
         },
         {
-          "name"		: 'Topqiang',
-          "avatar"	: 'https://avatars3.githubusercontent.com/u/18321545?s=460&v=4',
-          "tags"		: ['全栈', 'js', 'php', 'java']
+            "name"		: '刘忆文',
+            "avatar"	: 'https://github.com/topqiang',
+            "tags"		: ['js', 'php', 'java','vue','react']
         },
         {
-          "name"		: 'Topqiang',
-          "avatar"	: 'https://avatars3.githubusercontent.com/u/18321545?s=460&v=4',
-          "tags"		: ['全栈', 'js', 'php', 'java']
+            "name"		: '刘柱',
+            "avatar"	: 'https://github.com/simengphp',
+            "tags"		: ['php']
         },
-        {
-          "name"		: 'Topqiang',
-          "avatar"	: 'https://avatars3.githubusercontent.com/u/18321545?s=460&v=4',
-          "tags"		: ['全栈', 'js', 'php', 'java']
-        },
-        {
-          "name"		: 'Topqiang',
-          "avatar"	: 'https://avatars3.githubusercontent.com/u/18321545?s=460&v=4',
-          "tags"		: ['全栈', 'js', 'php', 'java']
-        },
-        {
-          "name"		: 'Topqiang',
-          "avatar"	: 'https://avatars3.githubusercontent.com/u/18321545?s=460&v=4',
-          "tags"		: ['全栈', 'js', 'php', 'java']
-        }
       ],
+    /**fcc项目介绍*/
 	"aboutus"	:[
 		{
 			"title"			:"关于我们",
