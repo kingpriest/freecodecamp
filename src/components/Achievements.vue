@@ -1,49 +1,20 @@
 <template>
-  <!-- <div class="container d-flex flex-row justify-content-center">
-    <div style="height:1300px" class="left w-25 p-2">
-      <img width="100%" src="static/img/timg.gif" alt="logo">
-      <div class="title">
-        <h4>FCC Tianjin</h4>
-      </div>
-    </div>
-    <div class="right w-70 p-2">
-        <div ref="right" class="cont col-xl-12">
-          <b-card v-for="(item, index) in achievementData" :key="index"
-                  :title="item.title"
-                  :img-src="item.img"
-                  img-alt="Image"
-                  img-top
-                  class="card"
-                  id="card">
-            <ul class="list">
-              <li v-for="(val, index) in item.list" :key="index">
-                <div class="circle"></div>
-                <div class="line"></div>
-                <div class="text">{{val}}</div>
-              </li>
-            </ul>
-          </b-card>
-        </div>
-    </div>
-  </div> -->
-  <div>
-    <div ref="right" class="cont col-xl-12">
-      <b-card v-for="(item, index) in achievementData" :key="index"
-              :title="item.title"
-              :img-src="item.img"
-              img-alt="Image"
-              img-top
-              class="card"
-              id="card">
-        <ul class="list">
-          <li v-for="(val, index) in item.list" :key="index">
-            <div class="circle"></div>
-            <div class="line"></div>
-            <div class="text">{{val}}</div>
-          </li>
-        </ul>
-      </b-card>
-    </div>
+  <div class="cont col-xl-12">
+    <b-card v-for="(item, index) in achievementData" :key="index"
+            :title="item.title"
+            :img-src="item.img"
+            img-alt="Image"
+            img-top
+            class="card"
+            id="card">
+      <ul class="list">
+        <li v-for="(val, index) in item.list" :key="index">
+          <div class="circle"></div>
+          <div class="line"></div>
+          <div class="text">{{val}}</div>
+        </li>
+      </ul>
+    </b-card>
   </div>
 </template>
 
@@ -51,16 +22,11 @@
 export default {
   data() {
     return {
-      achievementData: [],
-      right: 0
+      achievementData: []
     }
   },
   mounted() {
     this.achievementData = this.$datajson.achievementData
-    this.$nextTick(() => {
-      this.right = this.$refs.right.clientHeight
-    })
-
   }
 }
 </script>
@@ -99,7 +65,7 @@ export default {
     text-align: center;
 
     .card
-      width: 450px;
+      width: 350px;
       display: inline-block;
       margin-left: 15px;
       margin-top: 20px;

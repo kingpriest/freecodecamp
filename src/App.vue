@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <b-navbar toggleable="md" type="dark" variant="secondary">
+    <b-navbar ref="navbar" toggleable="md" type="dark" variant="secondary">
       <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
       <b-navbar-brand href="#">FCC Tianjin</b-navbar-brand>
       <b-collapse is-nav id="nav_collapse">
@@ -33,9 +33,6 @@
 <script>
 export default {
   name: "App",
-  mounted() {
-    // console.log("data",this.$datajson);
-  },
   methods: {
     toAboutUs() {
       this.$router.push("/aboutUs");
@@ -58,9 +55,21 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
-.b-group {
-  margin-top: 20px;
+.left {
+  padding: 0 10px;
+  /* background-color: rgb(251, 244, 244);
+  border-right-color: rgba(0, 0, 0, 0.03); */
 }
-@media (min-width: 992px) {
+.right {
+  border-left: 1px solid rgb(243, 237, 237);
+}
+.b-group {
+  padding-top: 60px;
+  width: 90%;
+}
+@media (max-width: 667px) {
+  .left {
+    display: none;
+  }
 }
 </style>

@@ -1,52 +1,4 @@
 <template>
-  <!-- <div class="container d-flex flex-row justify-content-center">
-    <div class="left w-25 p-2">
-      <img width="100%" src="static/img/timg.gif" alt="logo">
-      <div class="title">
-        <h4>FCC Tianjin</h4>
-        <b-list-group>
-          <b-list-group-item href="#" @click="toAboutUs" variant="primary">About Us</b-list-group-item>
-          <b-list-group-item href="#" @click="toContributors" variant="secondary">Contributors</b-list-group-item>
-          <b-list-group-item href="#" @click="toAchievements" variant="success">Achievements</b-list-group-item>
-        </b-list-group>
-      </div>
-    </div>
-    <div class="right w-75 p-2">
-      <div class="content">
-        <div class="title">
-          <h4>来自各个社区的小伙伴</h4>
-        </div>
-        <div class="slider">
-          <b-carousel id="carousel1"
-            style="text-shadow: 1px 1px 2px #333;"
-            controls
-            indicators
-            background="#ababab"
-            :interval="4000"
-            img-width="1024"
-            img-height="480"
-            v-model="slide"
-            @sliding-start="onSlideStart"
-            @sliding-end="onSlideEnd">
-
-            <b-carousel-slide v-for="(img, index) in carousel" :key="index"
-              :img-src="img.imgsrc" :img-alt="img.alt" :caption="img.title">
-              <p>{{img.desc}}</p>
-            </b-carousel-slide>
-
-          </b-carousel>
-        </div>
-      </div>
-      <div class="content" v-for="(item, index) in aboutus" :key="index">
-        <div class="title">
-          <h4>{{item.title}}</h4>
-        </div>
-        <div class="text">
-          {{item.content}}
-        </div>
-      </div>
-    </div>
-  </div> -->
   <div>
       <div class="content">
         <div class="title">
@@ -91,14 +43,13 @@ export default {
     return {
       slide: 0,
       sliding: null,
-      aboutus:[],
-      carousel:[]
+      aboutus: [],
+      carousel: []
     }
   },
-  mounted(){
+  mounted() {
     this.aboutus = this.$datajson.aboutus
     this.carousel = this.$datajson.carousel
-
   },
   methods: {
     onSlideStart(slide) {
@@ -106,15 +57,6 @@ export default {
     },
     onSlideEnd(slide) {
       this.sliding = false
-    },
-    toAboutUs() {
-      this.$router.push('/aboutUs')
-    },
-    toContributors() {
-      this.$router.push('/contributors')
-    },
-    toAchievements() {
-      this.$router.push('/achievements')
     }
   }
 }
@@ -131,16 +73,8 @@ export default {
   height: 1100px;
   margin: 0 auto;
 }
-.left {
-  height: 100%;
-  background-color: rgb(251, 244, 244);
-  border-right-color: rgba(0, 0, 0, 0.03);
-}
 .title {
   margin-top: 20px;
-}
-.right {
-  height: 100%;
   text-align: left;
 }
 .slider {
@@ -148,6 +82,7 @@ export default {
 }
 .content {
   margin-left: 20px;
+  text-align: justify;
 }
 .text {
   text-indent: 2em;
