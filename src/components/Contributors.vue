@@ -7,15 +7,17 @@
     <div class="col-xl-12 text-center">
       <div class="content-box" v-for="(item, index) in contributors" :key="index">
         <div class="card-body">
-          <div class="avatar">
-            <img :src="item.avatar" width="100" height="100" alt="avatar" >
-          </div>
+          <a class="avatar" :href="item.avatar" target="_blank">
+            <img v-lazy="item.pic" width="100" height="100" alt="avatar" >
+          </a>
           <div class="name">
             {{item.name}}
           </div>
-          <b-button variant="outline-success" v-for="(val, index) in item.tags" :key="index" style="margin-top:10px;margin-left:6px;width:50px;">
-            {{val}}
-          </b-button>
+          <a :href="item.avatar" target="_blank">
+            <b-button variant="outline-success" v-for="(val, index) in item.tags" :key="index" style="margin-top:10px;margin-left:6px;width:50px;">
+              {{val}}
+            </b-button>
+          </a>
         </div>
       </div>
     </div>
@@ -57,7 +59,15 @@ export default {
 * {
   margin: 0;
   padding: 0;
+
   /* font-size: 1em; */
+}
+
+a:link {
+  color: black;
+}
+a:hover {
+  color: black;
 }
 .container {
   height: 1100px;
@@ -138,6 +148,8 @@ export default {
         top: 50px;
         left: 0;
         right: 0;
+        display: inline-block;
+        text-decoration: none;
 
         img
           border-radius: 100%;
