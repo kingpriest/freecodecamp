@@ -14,8 +14,8 @@
             {{item.name}}
           </div>
           <a :href="item.avatar" target="_blank">
-            <b-button variant="outline-success" v-for="(val, index) in item.tags" :key="index" style="margin-top:10px;margin-left:6px;width:50px;">
-              {{val}}
+            <b-button variant="outline-success" v-for="(val, index) in item.tags" :key="index" style="margin-top:10px;margin-left:6px;">
+              <div class="btn-cont">{{val}}</div>
             </b-button>
           </a>
         </div>
@@ -38,12 +38,12 @@ export default {
   data() {
     return {
       contributors: []
-    }
+    };
   },
   mounted() {
-    this.contributors = this.$datajson.contributors
+    this.contributors = this.$datajson.contributors;
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -59,8 +59,6 @@ export default {
 * {
   margin: 0;
   padding: 0;
-
-  /* font-size: 1em; */
 }
 
 a:link {
@@ -73,58 +71,41 @@ a:hover {
   height: 1100px;
   margin: 0 auto;
 }
-.left {
-  height: 100%;
-  background-color: rgb(251, 244, 244);
-  border-right-color: rgba(0, 0, 0, 0.03);
+.btn-cont {
+  padding: 0 4px;
 }
 .title {
   margin-top: 20px;
 }
-.right {
-  height: 100%;
-  text-align: left;
-}
-.con-title {
-  font-size: 2em;
-}
-.rightContainer {
-  margin-left: 20px;
-}
-.content-box {
-  background-size: 100px 100px;
-  background-image: linear-gradient(
-    135deg,
-    rgb(46, 148, 63),
-    rgb(46, 148, 63) 25%,
-    white 25%,
-    white 50%,
-    rgb(46, 148, 63) 50%,
-    rgb(46, 148, 63) 75%,
-    white 75%,
-    white 100%
-  );
-}
-.content-box:hover {
-  transition: all 0.5s linear;
-  animation: animate 0.5s linear infinite;
-}
 </style>
 
 <style lang="stylus" scoped rel="stylesheet/stylus">
-.rightContainer
-  .con-title
+.rightContainer {
+  margin-left: 20px;
+
+  .con-title {
     padding: 20px 0;
     text-align: left;
+    font-size: 2em;
+  }
 
-  .text
+  .text {
     padding: 10px 0;
     text-align: left;
+  }
 
-  .text-center
+  .text a:link {
+    color: blue;
+  }
+
+  .text a:hover {
+    color: blue;
+  }
+
+  .text-center {
     padding-bottom: 20px;
 
-    .content-box
+    .content-box {
       position: relative;
       width: 250px;
       height: 310px;
@@ -136,14 +117,27 @@ a:hover {
       box-shadow: 1px 2px 2px;
       border-radius: 10px;
       cursor: pointer;
+      background-size: 100px 100px;
+      background-image: linear-gradient(
+        135deg,
+        rgb(46, 148, 63),
+        rgb(46, 148, 63) 25%,
+        white 25%,
+        white 50%,
+        rgb(46, 148, 63) 50%,
+        rgb(46, 148, 63) 75%,
+        white 75%,
+        white 100%
+      );
 
-      .card-body
+      .card-body {
         margin-top: 100px;
         z-index: 1;
         height: 300px;
         background: white;
+      }
 
-      .avatar
+      .avatar {
         position: absolute;
         top: 50px;
         left: 0;
@@ -151,10 +145,21 @@ a:hover {
         display: inline-block;
         text-decoration: none;
 
-        img
+        img {
           border-radius: 100%;
           box-shadow: 1px 1px 1px;
+        }
+      }
 
-      .name
+      .name {
         padding-top: 70px;
+      }
+    }
+
+    .content-box:hover {
+      transition: all 0.5s linear;
+      animation: animate 0.5s linear infinite;
+    }
+  }
+}
 </style>

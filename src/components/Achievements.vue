@@ -36,23 +36,6 @@ export default {
 * {
   margin: 0;
   padding: 0;
-  /* font-size: 1em; */
-}
-.container {
-  height: 1100px;
-  margin: 0 auto;
-}
-.left {
-  height: 100%;
-  background-color: rgb(251, 244, 244);
-  border-right-color: rgba(0, 0, 0, 0.03);
-}
-.title {
-  margin-top: 20px;
-}
-.right {
-  height: 100%;
-  text-align: left;
 }
 </style>
 <style lang="stylus" scoped rel="stylesheet/stylus">

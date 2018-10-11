@@ -12,18 +12,18 @@
       </b-collapse>
     </b-navbar> 
     <div class="container d-flex flex-row justify-content-center">
-      <div class="left w-25 p-2">
+      <div class="left">
         <img width="100%" src="static/img/timg.gif" alt="logo">
         <div class="title">
           <h4>FCC Tianjin</h4>
         </div>
         <b-list-group class="b-group">
-          <b-list-group-item href="#" @click="toAboutUs" variant="primary">About Us</b-list-group-item>
-          <b-list-group-item href="#" @click="toContributors" variant="secondary">Contributors</b-list-group-item>
-          <b-list-group-item href="#" @click="toAchievements" variant="success">Achievements</b-list-group-item>
+          <b-list-group-item href="#" @click="toAboutUs" >About Us</b-list-group-item>
+          <b-list-group-item href="#" @click="toContributors" >Contributors</b-list-group-item>
+          <b-list-group-item href="#" @click="toAchievements" >Achievements</b-list-group-item>
         </b-list-group>
       </div>
-      <div class="right w-75 p-2">
+      <div class="right">
         <router-view/>
       </div>
     </div>
@@ -56,20 +56,30 @@ export default {
   color: #2c3e50;
 }
 .container {
-  border-left: 1px solid rgb(243, 237, 237);
+  display: table;
+  /* border-left: 1px solid rgb(243, 237, 237);
   border-right: 1px solid rgb(243, 237, 237);
-  border-bottom: 1px solid rgb(243, 237, 237);
+  border-bottom: 1px solid rgb(243, 237, 237); */
+}
+.container .left,
+.container .right {
+  display: table-cell;
 }
 .left {
   padding: 0 10px;
-  /* background-color: rgb(251, 244, 244);
-  border-right-color: rgba(0, 0, 0, 0.03); */
+  width: 25%;
+  background-color: rgb(251, 244, 244);
+  text-align: center;
+  border-right:1px solid rgb(230, 226, 226);
 }
 .right {
+  width: 75%;
   border-left: 1px solid rgb(243, 237, 237);
+  min-height: 1000px;
 }
 .b-group {
-  padding-top: 60px;
+  padding-top: 100px;
+  margin: 0 auto;
   width: 90%;
 }
 @media (max-width: 667px) {

@@ -33,7 +33,7 @@ export default {
       "name": '刘忆文',
       "avatar": 'https://github.com/kingpriest/',
       "tags": ['javascript', 'vue'],
-      "pic": "static/img/lyw.jpg"
+      "pic": "static/img/lyw.png"
     },
     {
       "name": '张烁',
