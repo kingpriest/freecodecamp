@@ -37,8 +37,8 @@ export default {
     },
     {
       "name": '张烁',
-      "avatar": '#',
-      "tags": ['java', 'python', 'vue', 'sql', 'c++', 'javascript'],
+      "avatar": 'https://github.com/ZhangShuoSol',
+      "tags": ['java', 'python', 'sql','c++' , 'vue', 'javascript'],
       "pic": "static/img/zs.jpg"
     },
   ],
