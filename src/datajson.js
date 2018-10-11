@@ -2,57 +2,44 @@ export default {
   /**历史活动记录*/
   "achievementData": [
     {
-      "img": 'static/img/fcc-meetup1.jpeg',
-      "title": '2017/04 FCC上海前端技术群线下Meetup #1',
-      "list": ['开场；', '1、造轮子-简单的 MVVM 框架核心 - 于航；', '2、SSO 核心原理 - Kenneth Choi；', '3、RESTful API 架构设计 - 🐔；', '4、Bigpipe 技术的前端应用 - 糖爸；', '自由交流；']
+      "img": 'static/img/2018web.jpg',
+      "title": '2018天津·WEB前端交流会',
+      "list": ['开场；', '1、大咖分享：小程序时代如何以小见大？ - 小李君；', '2、大咖分享：前端性能优化 - Justjavac；',
+          '3、前端搬砖工如何转型区块链工程师？ - 余博伦；', '4、VUE与CMS相结合高度提升代码复用性 - 沈创；', '自由交流；']
     },
-    {
-      "img": 'static/img/fcc-meetup2.jpeg',
-      "title": '2017/04 FCC上海前端技术群线下Meetup #1',
-      "list": ['开场；', '1、造轮子-简单的 MVVM 框架核心 - 于航；', '2、SSO 核心原理 - Kenneth Choi；', '3、RESTful API 架构设计 - 🐔；', '4、Bigpipe 技术的前端应用 - 糖爸；', '自由交流；']
-    },
-    {
-      "img": 'static/img/fcc-meetup3.jpeg',
-      "title": '2017/04 FCC上海前端技术群线下Meetup #1',
-      "list": ['开场；', '1、造轮子-简单的 MVVM 框架核心 - 于航；', '2、SSO 核心原理 - Kenneth Choi；', '3、RESTful API 架构设计 - 🐔；', '4、Bigpipe 技术的前端应用 - 糖爸；', '自由交流；']
-    },
-    {
-      "img": 'static/img/fcc-meetup4.jpg',
-      "title": '2017/04 FCC上海前端技术群线下Meetup #1',
-      "list": ['开场；', '1、造轮子-简单的 MVVM 框架核心 - 于航；', '2、SSO 核心原理 - Kenneth Choi；', '3、RESTful API 架构设计 - 🐔；', '4、Bigpipe 技术的前端应用 - 糖爸；', '自由交流；']
-    }
+
   ],
   /**组织者*/
   "contributors": [
     {
       "name": '阚自强',
       "avatar": 'https://github.com/topqiang',
-      "tags": ['全栈', 'js', 'php', 'java', 'vue', 'react'],
-      "pic": "https://avatars3.githubusercontent.com/u/18321545?s=460&v=4"
+      "tags": ['javascript', 'php', 'node'],
+      "pic": "static/img/kzq.jpg"
     },
     {
       "name": '刘柱',
       "avatar": 'http://www.simengphp.com',
       "tags": ['php'],
-      "pic": "https://avatars0.githubusercontent.com/u/22831451?s=400&v=4"
+      "pic": "static/img/lz.jpg"
+    },
+    {
+        "name": '伊莉娜',
+        "avatar": '#',
+        "tags": ['运营', '自媒体'],
+        "pic": "static/img/yln.jpg"
     },
     {
       "name": '刘忆文',
-      "avatar": 'https://github.com/topqiang',
-      "tags": ['js', 'vue'],
-      "pic": "https://avatars2.githubusercontent.com/u/11833905?s=400&u=e02e08c94213cd6a0021218a7aaba1e215bb9d8f&v=4"
-    },
-    {
-      "name": '伊莉娜',
-      "avatar": '#',
-      "tags": ['运营', '自媒体'],
-      "pic": ""
+      "avatar": 'https://github.com/kingpriest/',
+      "tags": ['javascript', 'vue'],
+      "pic": "static/img/lyw.jpg"
     },
     {
       "name": '张烁',
       "avatar": '#',
-      "tags": ['CTO'],
-      "pic": ""
+      "tags": ['java', 'python', 'vue', 'sql', 'c++', 'javascript'],
+      "pic": "static/img/zs.jpg"
     },
   ],
   /**fcc项目介绍*/
