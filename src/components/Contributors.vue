@@ -152,7 +152,7 @@ a:hover {
       }
 
       .name {
-        padding-top: 70px;
+        padding-top: 50px;
       }
     }
 
