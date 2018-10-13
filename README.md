@@ -1,2 +1,0 @@
-# freecodecamp
-tianjin.freecodecamp
