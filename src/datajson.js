@@ -7,6 +7,12 @@ export default {
       "list": ['开场；', '1、大咖分享：小程序时代如何以小见大？ - 小李君；', '2、大咖分享：前端性能优化 - Justjavac；',
           '3、前端搬砖工如何转型区块链工程师？ - 余博伦；', '4、VUE与CMS相结合高度提升代码复用性 - 沈创；', '自由交流；']
     },
+    {
+        "img": 'static/img/2018开发者大会.jpg',
+        "title": '2018天津·开发者交流会',
+        "list": ['开场；', '1、前端工程化 - 阚自强；', '2、微服务 - #；',
+            '3、数据库设计优化 - #；', '4、区块链 - #；', '自由交流；']
+    },
 
   ],
   /**组织者*/
@@ -55,25 +61,46 @@ export default {
   ],
   "carousel": [
     {
-      "title": "FreeCodeCamp conf",
-      "imgsrc": "https://picsum.photos/1024/480/?image=58",
-      "alt": "",
-      "href": "https://www.freecodecamp.one",
-      "desc": "FreeCodeCamp本期简单描述"
+        "title": '2018天津·开发者交流会',
+        "imgsrc": "static/img/2018开发者大会.jpg",
+        "alt": "",
+        "href": "#",
+        "desc": "2018天津聚集数据库，微服务，前端工程化，区块链等技术的交流大会！"
     },
     {
-      "title": "FreeCodeCamp conf",
-      "imgsrc": "https://picsum.photos/1024/480/?image=54",
+      "title": "2018天津前端交流会",
+      "imgsrc": "static/img/前端大会3.jpg",
       "alt": "",
-      "href": "https://www.freecodecamp.one",
-      "desc": "FreeCodeCamp本期简单描述"
+      "href": "http://www.huodongxing.com/event/6441015001000",
+      "desc": "一场高质量的前端及小程序大会！业界大咖现场分享，技术人才齐聚一堂，不仅能学到技术，更能体验互联网技术大会带来的思维冲击，并与超级大咖近距离探讨交流！"
     },
     {
-      "title": "FreeCodeCamp conf",
-      "imgsrc": "https://picsum.photos/1024/480/?image=52",
-      "alt": "",
-      "href": "https://www.freecodecamp.one",
-      "desc": "FreeCodeCamp本期简单描述"
-    }
+        "title": "第十四届和谐人机环境联合学术会议",
+        "imgsrc": "static/img/计算机协会.jpg",
+        "alt": "",
+        "href": "",
+        "desc": "FCC天津受邀第十四届和谐人机环境联合学术会议进行FCC社区的宣讲"
+    },
+    {
+        "title": "天津 Coffee and Code 你不知道的JS",
+        "imgsrc": "static/img/codeing.jpg",
+        "alt": "",
+        "href": "http://www.huodongxing.com/event/8398125176200",
+        "desc": "介绍了一些你不知道的JS的语法，以及常用的JS的深入案例"
+    },
+    {
+        "title": "FCC天津进入企业",
+        "imgsrc": "static/img/企业.jpg",
+        "alt": "",
+        "href": "http://www.campcode",
+        "desc": "FCC天津进入企业进行团队开发以及区块链知识的交流"
+    },
+    {
+        "title": "2018天津前端交流会",
+        "imgsrc": "static/img/前端大会2.jpg",
+        "alt": "",
+        "href": "http://www.huodongxing.com/event/6441015001000",
+        "desc": "一场高质量的前端及小程序大会！业界大咖现场分享，技术人才齐聚一堂，不仅能学到技术，更能体验互联网技术大会带来的思维冲击，并与超级大咖近距离探讨交流！"
+    },
   ]
 };
