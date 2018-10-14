@@ -1,12 +1,6 @@
 <template>
   <div class="cont col-xl-12">
-    <b-card v-for="(item, index) in achievementData" :key="index"
-            :title="item.title"
-            :img-src="item.img"
-            img-alt="Image"
-            img-top
-            class="card"
-            id="card">
+    <b-card v-for="(item, index) in achievementData" :key="index" :title="item.title" :img-src="item.img" img-alt="Image" img-top class="card" id="card">
       <ul class="list">
         <li v-for="(val, index) in item.list" :key="index">
           <div class="circle"></div>
@@ -39,16 +33,19 @@ export default {
 }
 </style>
 <style lang="stylus" scoped rel="stylesheet/stylus">
-@media (max-width: 667px)
+@media (max-width: 1000px)
   #card
     width: 300px;
+    margin-left: 0;
 
 .right
   .cont
     text-align: center;
+    display: table;
 
     .card
       width: 350px;
+      vertical-align: top;
       display: inline-block;
       margin-left: 15px;
       margin-top: 20px;

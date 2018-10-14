@@ -1,38 +1,27 @@
 <template>
   <div>
-      <div class="content">
-        <div class="title">
-          <h4>来自各个社区的小伙伴</h4>
-        </div>
-        <div class="slider">
-          <b-carousel id="carousel1"
-            style="text-shadow: 1px 1px 2px #333;"
-            controls
-            indicators
-            background="#ababab"
-            :interval="4000"
-            img-width="1024"
-            img-height="480"
-            v-model="slide"
-            @sliding-start="onSlideStart"
-            @sliding-end="onSlideEnd">
-
-            <b-carousel-slide v-for="(img, index) in carousel" :key="index"
-              :img-src="img.imgsrc" :img-alt="img.alt" :caption="img.title">
-              <p>{{img.desc}}</p>
-            </b-carousel-slide>
-
-          </b-carousel>
-        </div>
+    <div class="content" id="content">
+      <div class="title">
+        <h4>来自各个社区的小伙伴</h4>
       </div>
-      <div class="content" v-for="(item, index) in aboutus" :key="index">
-        <div class="title">
-          <h4>{{item.title}}</h4>
-        </div>
-        <div class="text">
-          {{item.content}}
-        </div>
+      <div class="slider" id="slider">
+        <b-carousel id="carousel1" style="text-shadow: 1px 1px 2px #333;" controls indicators background="#ababab" :interval="4000" img-width="1024" img-height="480" v-model="slide" @sliding-start="onSlideStart" @sliding-end="onSlideEnd">
+
+          <b-carousel-slide v-for="(img, index) in carousel" :key="index" :img-src="img.imgsrc" :img-alt="img.alt" :caption="img.title">
+            <p>{{img.desc}}</p>
+          </b-carousel-slide>
+
+        </b-carousel>
       </div>
+    </div>
+    <div class="content" id="content" v-for="(item, index) in aboutus" :key="index">
+      <div class="title">
+        <h4>{{item.title}}</h4>
+      </div>
+      <div class="text">
+        {{item.content}}
+      </div>
+    </div>
   </div>
 </template>
 
@@ -64,6 +53,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@media (max-width: 1000px) {
+  #slider p {
+    font-size: 6px;
+  }
+  #content {
+    margin-left: 0;
+    padding: 0 5px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -90,12 +88,12 @@ export default {
   margin-top: 20px;
   letter-spacing: 3px;
 }
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
   * {
     font-size: 1em;
   }
   .content {
     margin-left: 10px;
   }
-}
+} */
 </style>
