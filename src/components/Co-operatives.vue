@@ -6,7 +6,7 @@
         <hr>
         <div class="col-xl-12 text-center coopContainer">
             <a :href="item.url" target="_blank" v-for="(item, index) in cooperatives" :key="index" class="coop">
-                <img :src="item.img" alt="logo" width="200">
+                <img v-lazy="item.img" alt="logo" width="200">
             </a>
         </div>
     </div>

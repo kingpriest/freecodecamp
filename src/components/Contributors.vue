@@ -14,7 +14,7 @@
             {{item.name}}
           </div>
           <a :href="item.avatar" target="_blank">
-            <b-button variant="outline-success" v-for="(val, index) in item.tags" :key="index" style="margin-top:10px;margin-left:6px;height:25px;ling-height:12px;">
+            <b-button variant="outline-success" v-for="(val, index) in item.tags" :key="index" style="margin-top:10px;margin-left:6px;height:25px;line-height:12px;">
               <div class="btn-cont">{{val}}</div>
             </b-button>
           </a>
@@ -156,5 +156,5 @@ a:hover {
           box-shadow: 1px 1px 1px;
 
       .name
-        padding-top: 70px;
+        padding-top: 55px;
 </style>

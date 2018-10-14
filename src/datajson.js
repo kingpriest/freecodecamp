@@ -12,27 +12,27 @@ export default {
   /**合作企业*/
   "cooperatives": [
     {
-      "img": '/static/img/inter.jpg',
+      "img": 'static/img/inter.jpg',
       "url": 'https://www.intel.cn/content/www/cn/zh/homepage.html'
     },
     {
-      "img": '/static/img/inter.jpg',
+      "img": 'static/img/inter.jpg',
       "url": 'https://www.intel.cn/content/www/cn/zh/homepage.html'
     },
     {
-      "img": '/static/img/inter.jpg',
+      "img": 'static/img/inter.jpg',
       "url": 'https://www.intel.cn/content/www/cn/zh/homepage.html'
     },
     {
-      "img": '/static/img/inter.jpg',
+      "img": 'static/img/inter.jpg',
       "url": 'https://www.intel.cn/content/www/cn/zh/homepage.html'
     },
     {
-      "img": '/static/img/inter.jpg',
+      "img": 'static/img/inter.jpg',
       "url": 'https://www.intel.cn/content/www/cn/zh/homepage.html'
     },
     {
-      "img": '/static/img/inter.jpg',
+      "img": 'static/img/inter.jpg',
       "url": 'https://www.intel.cn/content/www/cn/zh/homepage.html'
     }
   ],
