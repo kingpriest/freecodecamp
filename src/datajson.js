@@ -36,7 +36,7 @@ export default {
       "url": 'http://www.itdks.com/'
     },
     {
-        "img": 'static/img/txkt.png', //前端早读课
+        "img": 'static/img/qdzd.jpg', //前端早读课
         "url": '#'
     },
     {
