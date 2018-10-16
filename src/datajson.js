@@ -12,29 +12,57 @@ export default {
   /**合作企业*/
   "cooperatives": [
     {
-      "img": 'static/img/inter.jpg',
-      "url": 'https://www.intel.cn/content/www/cn/zh/homepage.html'
+      "img": 'static/img/apic.png', //apicloud
+      "url": 'https://www.apicloud.com/'
     },
     {
-      "img": 'static/img/inter.jpg',
-      "url": 'https://www.intel.cn/content/www/cn/zh/homepage.html'
+      "img": 'static/img/gt.jpeg', //个推
+      "url": 'https://www.getui.com/cn/index.html'
     },
     {
-      "img": 'static/img/inter.jpg',
-      "url": 'https://www.intel.cn/content/www/cn/zh/homepage.html'
+      "img": 'static/img/hf.png', //洪荒科技
+      "url": '#'
     },
     {
-      "img": 'static/img/inter.jpg',
-      "url": 'https://www.intel.cn/content/www/cn/zh/homepage.html'
+      "img": 'static/img/qkj.png',  //氪空间
+      "url": 'https://www.krspace.cn/'
     },
     {
-      "img": 'static/img/inter.jpg',
-      "url": 'https://www.intel.cn/content/www/cn/zh/homepage.html'
+      "img": 'static/img/taifan.png', //泰凡科技
+      "url": 'http://www.techfantasy.com.cn/'
     },
     {
-      "img": 'static/img/inter.jpg',
-      "url": 'https://www.intel.cn/content/www/cn/zh/homepage.html'
-    }
+      "img": 'static/img/itdk.jpg', //it大咖说
+      "url": 'http://www.itdks.com/'
+    },
+    {
+        "img": 'static/img/txkt.png', //前端早读课
+        "url": '#'
+    },
+    {
+        "img": 'static/img/kyzg.png', //开源中国
+        "url": 'https://www.oschina.net/'
+    },
+    {
+        "img": 'static/img/huaxinzhiyuan.png', //华信智原
+        "url": 'http://www.hxzy.cn/'
+    },
+    {
+        "img": 'static/img/my.jpg', //码云
+        "url": 'https://gitee.com/'
+    },
+    {
+        "img": 'static/img/txd.png',  //天讯达
+        "url": 'https://www.txunda.com/'
+    },
+    {
+        "img": 'static/img/smphp.png',  //思梦php
+        "url": 'http://www.simengphp.com/'
+    },
+    {
+        "img": 'static/img/jj.jpg',  //掘金
+        "url": 'https://juejin.im/'
+    },
   ],
   /**历史活动记录*/
   "achievementData": [
