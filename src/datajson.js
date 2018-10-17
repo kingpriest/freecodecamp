@@ -36,11 +36,11 @@ export default {
       "url": 'http://www.itdks.com/'
     },
     {
-        "img": 'static/img/qdzd.jpg', //前端早读课
+        "img": 'static/img/qdzdk.jpg', //前端早读课
         "url": '#'
     },
     {
-        "img": 'static/img/kyzg.png', //开源中国
+        "img": 'static/img/kyzg.jpg', //开源中国
         "url": 'https://www.oschina.net/'
     },
     {
@@ -56,7 +56,7 @@ export default {
         "url": 'https://www.txunda.com/'
     },
     {
-        "img": 'static/img/smphp.png',  //思梦php
+        "img": 'static/img/smphp.jpg',  //思梦php
         "url": 'http://www.simengphp.com/'
     },
     {
