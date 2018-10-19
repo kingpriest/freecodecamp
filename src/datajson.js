@@ -75,8 +75,9 @@ export default {
     {
       "img": 'static/img/2018开发者大会.jpg',
       "title": '2018天津·开发者交流会',
-      "list": ['开场；', '1、前端工程化 - 阚自强；', '2、微服务 - #；',
-        '3、数据库设计优化 - #；', '4、区块链 - #；', '自由交流；']
+      "list": ['开场；', '1、前端工程师的格局 - 尚春；', '2、多租户Saas平台web实践 - 朱东宇；',
+        '3、Vue.js中的DOM和性能优化 - 李志刚；', '4、工程能力原子化的探索与实践 - 彭瑞；', '5、数据可视化实践 - 张付新；'
+          , '5、前端代码尺寸精简 - 徐健；','自由交流；']
     }
   ],
   /**组织者*/
@@ -128,7 +129,7 @@ export default {
       "title": '2018天津·开发者交流会',
       "imgsrc": "static/img/2018开发者大会.jpg",
       "alt": "",
-      "href": "#",
+      "href": "https://mp.weixin.qq.com/s?__biz=MzA5MTU2MDM5OA==&mid=2455064697&idx=1&sn=21b0d84f5b3b32eb19c3cbbb221b0ba2&chksm=87db70d8b0acf9ce30db679c83d0b42b5b8de43e4a08c75f4cebd20a075d8e3817b1999b306b&mpshare=1&scene=1&srcid=1019oSWWoIbB6Jjz0ED2Ui2s#rd",
       "desc": "2018天津聚集数据库，微服务，前端工程化，区块链等技术的交流大会！"
     },
     {
