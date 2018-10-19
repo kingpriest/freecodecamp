@@ -1,13 +1,13 @@
 export default {
   /**加入我们*/
   "joinUs": {
-    "git": 'https://github.com/FCC-Shanghai',
-    "gitPic": '/static/img/github.svg',
-    "qq": '//shang.qq.com/wpa/qunwpa?idkey=cd476c93cb4faf805ba36b1be3a0daf0359d31628b14f654fc7a086dd911d05a',
-    "qqPic": '/static/img/qq.svg',
-    "wechat": 'static/img/fcc-assistant.png',
-    "wechatPic": '/static/img/wechat.svg',
-    "wechatCont": '扫描二维码, 添加机器人为好友, 发送对应城市名: "天津", 即可进群'
+    "git": 'https://github.com/FCC-Shanghai', // github链接
+    "gitPic": '/static/img/github.svg', // github图标
+    "qq": '//shang.qq.com/wpa/qunwpa?idkey=cd476c93cb4faf805ba36b1be3a0daf0359d31628b14f654fc7a086dd911d05a', //qq链接
+    "qqPic": '/static/img/qq.svg', //qq图标
+    "wechat": 'static/img/fcc-assistant.png', //微信二维码
+    "wechatPic": '/static/img/wechat.svg', //微信图标
+    "wechatCont": '扫描二维码, 添加机器人为好友, 发送对应城市名: "天津", 即可进群' //微信提示
   },
   /**合作企业*/
   "cooperatives": [
@@ -36,11 +36,11 @@ export default {
       "url": 'http://www.itdks.com/'
     },
     {
-        "img": 'static/img/qdzd.jpg', //前端早读课
+        "img": 'static/img/qdzdk.jpg', //前端早读课
         "url": '#'
     },
     {
-        "img": 'static/img/kyzg.png', //开源中国
+        "img": 'static/img/kyzg.jpg', //开源中国
         "url": 'https://www.oschina.net/'
     },
     {
@@ -56,7 +56,7 @@ export default {
         "url": 'https://www.txunda.com/'
     },
     {
-        "img": 'static/img/smphp.png',  //思梦php
+        "img": 'static/img/smphp.jpg',  //思梦php
         "url": 'http://www.simengphp.com/'
     },
     {
